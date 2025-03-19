@@ -58,11 +58,27 @@
                     <option value="feminino">Feminino</option>
                     <option value="outro">Outro</option>
                 </select>
+
+                <label for="civil" id="civil-label">Estado Civil:</label>
+                <select name="civil" id="civil">
+                    <option value="default" selected>Escolha</option>
+                    <option value="Solteiro(a)">Solteiro(a)</option>
+                    <option value="Casado(a)">Casado(a)</option>
+                    <option value="Divorciado(a)">Divorciado(a)</option>
+                </select>
             </div>
 
             <div id="container-cpf">
                 <input oninput="mascara_cpf(this)" type="text" name="cpf" id="cpf" placeholder="CPF" maxlength="11">
                 <input oninput="mascara_rg(this)" type="text" name="rg" id="rg" placeholder="RG" maxlength="7">
+            </div>
+
+            <div id="file-container">
+                <input type="file" name="foto-perfil" id="foto-perfil">
+                <label for="foto-perfil" class="botao">Foto do Perfil</label>
+
+                <input type="file" name="assinatura" id="assinatura">
+                <label for="assinatura" class="botao">Assinatura</label>
             </div>
         </form>
         

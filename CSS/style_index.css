@@ -94,6 +94,7 @@ form{
     -webkit-box-shadow: 0px 0px 18px -1px rgba(0,0,0,0.21);
     -moz-box-shadow: 0px 0px 18px -1px rgba(0,0,0,0.21);
     box-shadow: 0px 0px 18px -1px rgba(0,0,0,0.21);
+    border-radius: 8px;
 }
 
 form h1{
@@ -179,6 +180,19 @@ form h1{
     color: #b3b3b3;
 }
 
+#container-nascimento-sexo #civil-label{
+    margin-left: 4rem;
+}
+
+#container-nascimento-sexo #civil{
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 2px solid #d1d1d1;
+    color: #b3b3b3;
+    margin-left: 1rem;
+}
+
 #container-cpf{
     display: flex;
     margin-left: 2rem;
@@ -242,4 +256,143 @@ form h1{
 
 #container-cpf #rg:focus::placeholder{
     color: transparent;
+}
+
+#file-container{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+#file-container input{
+    display: none;
+}
+
+.botao {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #002244;
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.botao:hover {
+    background-color: #022950;
+}
+
+
+form{
+    background-color: rgb(255, 255, 255);
+    width: calc(50% - 1rem);
+    -webkit-box-shadow: 0px 0px 18px -1px rgba(0,0,0,0.21);
+    -moz-box-shadow: 0px 0px 18px -1px rgba(0,0,0,0.21);
+    box-shadow: 0px 0px 18px -1px rgba(0,0,0,0.21);
+    border-radius: 8px;
+}
+
+form h1{
+    margin-left: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+#container-email, #container-telefone, #container-celular, #container-endereco, #container-cep, #container-pais {
+    margin-bottom: 2rem;
+}
+
+#container-email input,
+#container-telefone input,
+#container-celular input,
+#container-cep input {
+    background-color: rgb(255, 255, 255);
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-top: 1rem;
+    border-bottom: 2px solid #d1d1d1;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    height: 2rem;
+    width: calc(100% - 5rem);
+    display: block;
+    margin-bottom: 1rem;
+    padding-left: 1rem;
+}
+
+#container-email input:focus,
+#container-telefone input:focus,
+#container-celular input:focus,
+#container-cep input:focus {
+    outline: none;
+    box-shadow: none;
+    border-color: inherit;
+    border-bottom: 2px solid #b3b3b3;
+}
+
+#container-email input::placeholder,
+#container-telefone input::placeholder,
+#container-celular input::placeholder,
+#container-cep input::placeholder {
+    color: #b3b3b3;
+}
+
+#container-email input:focus::placeholder,
+#container-telefone input:focus::placeholder,
+#container-celular input:focus::placeholder,
+#container-cep input:focus::placeholder {
+    color: transparent;
+}
+
+#container-endereco textarea {
+    background-color: rgb(255, 255, 255);
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-top: 1rem;
+    border-bottom: 2px solid #d1d1d1;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    width: calc(100% - 5rem);
+    padding-left: 1rem;
+    padding-top: 1rem;
+    resize: none;
+}
+
+#container-endereco textarea:focus {
+    outline: none;
+    box-shadow: none;
+    border-color: inherit;
+    border-bottom: 2px solid #b3b3b3;
+}
+
+#container-endereco textarea::placeholder {
+    color: #b3b3b3;
+}
+
+#container-endereco textarea:focus::placeholder {
+    color: transparent;
+}
+
+#container-pais label {
+    margin-left: 2rem;
+}
+
+#container-pais select {
+    background-color: rgb(255, 255, 255);
+    margin-left: 1rem;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 2px solid #d1d1d1;
+    color: #b3b3b3;
+}
+
+#container-pais select:focus {
+    border-bottom: 2px solid #b3b3b3;
+    color: black;
 }
