@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/style_index.css">
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+        <div id="title-container">
+            <h1>Menu</h1>
+        </div>
+        <div id="container-nav">
+            <a href="#" class="container-nav-btn">
+                <img src="https://img.icons8.com/?size=100&id=73&format=png&color=FFFFFF" alt="imagem home">
+                <span>Home</span>
+            </a>
+            <a href="#" class="container-nav-btn">
+                <img src="https://img.icons8.com/?size=100&id=18914&format=png&color=FFFFFF" alt="imagem home">
+                <span>Formulário 01</span>
+            </a>
+            <a href="#" class="container-nav-btn">
+                <img src="https://img.icons8.com/?size=100&id=18914&format=png&color=FFFFFF" alt="imagem home">
+                <span>Formulário 02</span>
+            </a>
+            <a href="#" class="container-nav-btn">
+                <img src="https://img.icons8.com/?size=100&id=18914&format=png&color=FFFFFF" alt="imagem home">
+                <span>Formulário 03</span>
+            </a>
+            <a href="#" class="container-nav-btn">
+                <img src="https://img.icons8.com/?size=100&id=18914&format=png&color=FFFFFF" alt="imagem home">
+                <span>Formulário 04</span>
+            </a>
+        </div>
+        <div id="container-nav-image">
+            <img id="img-nav" src="https://placehold.co/300x350" alt="imagem">
+        </div>
+    </nav>
+    <header>
+        <h1>Cadastro de Usuário</h1>
+    </header>
+    <section>
+        <form>
+            <h1>Informações Pessoais</h1>
+            <div id="container-nome">
+                <input type="text" name="nome" id="nome" placeholder="Nome">
+            </div>
+
+            <div id="container-nascimento-sexo">
+                <label for="nascimento" id="nascimento-label">Data de Nascimento:</label>
+                <input type="date" name="nascimento" id="nascimento">
+
+                <label for="Sexo" id="sexo-label">Sexo:</label>
+                <select name="sexo" id="sexo">
+                    <option value="default" selected>Escolha</option>
+                    <option value="masculino">Masculino</option>
+                    <option value="feminino">Feminino</option>
+                    <option value="outro">Outro</option>
+                </select>
+            </div>
+
+            <div id="container-cpf">
+                <input oninput="mascara_cpf(this)" type="text" name="cpf" id="cpf" placeholder="CPF" maxlength="11">
+                <input oninput="mascara_rg(this)" type="text" name="rg" id="rg" placeholder="RG" maxlength="7">
+            </div>
+        </form>
+        
+    </section>
+<script src="JS/script.js"></script>
+</body>
+</html>
