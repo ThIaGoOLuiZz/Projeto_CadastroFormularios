@@ -81,8 +81,212 @@
                 <label for="assinatura" class="botao">Assinatura</label>
             </div>
         </form>
+        <form>
+            <h1>Contato</h1>
+    
+            <div id="container-email">
+                <input type="email" name="email" id="email" placeholder="E-mail">
+            </div>
+    
+            <div id="container-telefone">
+                <input type="text" name="telefone" id="telefone" placeholder="Telefone" maxlength="14" oninput="mascara_telefone(this)">
+                <input type="text" name="celular" id="celular" placeholder="Celular" maxlength="15" oninput="mascara_celular(this)">
+            </div>
+    
+            <div id="container-endereco">
+                <input type="text" name="endereco" id="endereco" placeholder="Endereço">
+            </div>
+    
+            <div id="container-cep">
+                <input type="text" name="cep" id="cep" placeholder="CEP" maxlength="9" oninput="mascara_cep(this)">
+            </div>
+    
+            <div id="container-pais">
+                <label for="pais" id="pais-label">País:</label>
+                <select name="pais" id="pais">
+                    <option value="brasil" selected>Brasil</option>
+                    <option value="outro">Outro</option>
+                </select>
+            </div>
+        </form>
+        <form>
+            <h1>Credenciais de Acesso</h1>
+    
+            <div id="container-usuario">
+                <input type="text" name="usuario" id="usuario" placeholder="Nome de Usuário">
+            </div>
+    
+            <div id="container-senha">
+                <input type="password" name="senha" id="senha" placeholder="Senha">
+                <input type="password" name="confirmar-senha" id="confirmar-senha" placeholder="Confirme a Senha">
+            </div>
+    
+            <div id="container-pergunta-secreta">
+                <label for="pergunta-secreta" id="pergunta-secreta-label">Pergunta Secreta:</label>
+                <select name="pergunta-secreta" id="pergunta-secreta">
+                    <option value="default" selected>Escolha uma pergunta</option>
+                    <option value="mae">Qual é o nome da sua mãe?</option>
+                    <option value="pai">Qual é o nome do seu pai?</option>
+                    <option value="pet">Qual foi o nome do seu primeiro animal de estimação?</option>
+                    <option value="cidade">Em que cidade você nasceu?</option>
+                </select>
+            </div>
+    
+            <div id="container-resposta-secreta">
+                <input type="text" name="resposta-secreta" id="resposta-secreta" placeholder="Resposta Secreta">
+            </div>
+    
+            <div id="container-termos">
+                <input type="checkbox" name="termos" id="termos">
+                <label for="termos">Eu aceito os Termos de Uso</label>
+            </div>
+        </form>
+        <form>
+            <h1>Informações Profissionais</h1>
+    
+            <div id="container-ocupacao">
+                <input type="text" name="ocupacao" id="ocupacao" placeholder="Ocupação">
+            </div>
+    
+            <div id="container-empresa">
+                <input type="text" name="empresa" id="empresa" placeholder="Empresa">
+            </div>
+    
+            <div id="container-cnpj">
+                <input type="text" name="cnpj" id="cnpj" placeholder="CNPJ da Empresa" maxlength="18" oninput="mascara_cnpj(this)">
+            </div>
+    
+            <div id="container-cargo">
+                <input type="text" name="cargo" id="cargo" placeholder="Cargo">
+            </div>
+    
+            <div id="container-salario">
+                <input type="number" name="salario" id="salario" placeholder="Salário Aproximado">
+            </div>
+    
+            <div id="container-admissao">
+                <label for="admissao" id="admissao-label">Data de Admissão:</label>
+                <input type="date" name="admissao" id="admissao">
+            </div>
+        </form>
+        <form>
+            <h1>Preferências e Redes Sociais</h1>
+    
+            <div id="container-genero-musical">
+                <input type="text" name="genero-musical" id="genero-musical" placeholder="Gênero Musical Favorito">
+            </div>
+    
+            <div id="container-hobbies">
+                <label>Hobbies:</label>
+                <div class="hobbies-opcoes">
+                    <input type="checkbox" name="hobbies" id="hobby-futebol" value="Futebol">
+                    <label for="hobby-futebol">Futebol</label>
+    
+                    <input type="checkbox" name="hobbies" id="hobby-leitura" value="Leitura">
+                    <label for="hobby-leitura">Leitura</label>
+    
+                    <input type="checkbox" name="hobbies" id="hobby-viagens" value="Viagens">
+                    <label for="hobby-viagens">Viagens</label>
+    
+                    <input type="checkbox" name="hobbies" id="hobby-musica" value="Música">
+                    <label for="hobby-musica">Música</label>
+                </div>
+            </div>
+    
+            <div id="container-redes-sociais">
+                <input type="url" name="facebook" id="facebook" placeholder="Facebook (URL)">
+                <input type="url" name="instagram" id="instagram" placeholder="Instagram (URL)">
+                <input type="url" name="linkedin" id="linkedin" placeholder="LinkedIn (URL)">
+            </div>
+    
+            <div id="container-notificacoes">
+                <label>Receber Notificações via E-mail:</label>
+                <div class="notificacoes-opcoes">
+                    <input type="radio" name="notificacoes" id="notificacao-sim" value="Sim">
+                    <label for="notificacao-sim">Sim</label>
+    
+                    <input type="radio" name="notificacoes" id="notificacao-nao" value="Não">
+                    <label for="notificacao-nao">Não</label>
+                </div>
+            </div>
+        </form>
+        <form>
+            <h1>Pagamento e Dados Bancários</h1>
+    
+            <div id="container-cartao">
+                <input type="text" name="cartao" id="cartao" placeholder="Número do Cartão de Crédito" maxlength="19" oninput="mascara_cartao(this)">
+            </div>
+    
+            <div id="container-vencimento-cvv">
+                <label for="vencimento" id="vencimento-label">Data de Vencimento:</label>
+                <input type="month" name="vencimento" id="vencimento">
+    
+                <label for="cvv" id="cvv-label">Código de Segurança:</label>
+                <input type="number" name="cvv" id="cvv" placeholder="CVV" maxlength="3">
+            </div>
+    
+            <div id="container-banco">
+                <label for="banco" id="banco-label">Banco:</label>
+                <select name="banco" id="banco">
+                    <option value="default" selected>Escolha um banco</option>
+                    <option value="bb">Banco do Brasil</option>
+                    <option value="caixa">Caixa</option>
+                    <option value="bradesco">Bradesco</option>
+                </select>
+            </div>
+    
+            <div id="container-agencia-conta">
+                <input type="text" name="agencia" id="agencia" placeholder="Agência">
+                <input type="text" name="conta" id="conta" placeholder="Conta Corrente">
+            </div>
+    
+            <div id="container-tipo-conta">
+                <label for="tipo-conta" id="tipo-conta-label">Tipo de Conta:</label>
+                <select name="tipo-conta" id="tipo-conta">
+                    <option value="poupanca">Poupança</option>
+                    <option value="corrente">Corrente</option>
+                </select>
+            </div>
+        </form>
+        <form>
+            <h1>Outros Recursos</h1>
+    
+            <div id="container-upload">
+                <input type="file" name="documento" id="documento" accept=".pdf">
+                <label for="documento" class="botao">Enviar Documento PDF</label>
+            </div>
+    
+            <div id="container-slider">
+                <label for="termos-slider">Aceito os Termos:</label>
+                <input type="range" name="termos-slider" id="termos-slider" min="0" max="1" step="1" value="0" onchange="atualizarSlider(this)">
+                <span id="slider-status">Não</span>
+            </div>
+    
+            <div id="container-horario">
+                <label for="horario" id="horario-label">Horário de Preferência:</label>
+                <input type="time" name="horario" id="horario">
+            </div>
+    
+            <div id="container-dependentes">
+                <input type="number" name="dependentes" id="dependentes" placeholder="Número de Dependentes" min="0">
+            </div>
+    
+            <div id="container-cor">
+                <label for="cor" id="cor-label">Cor Favorita:</label>
+                <input type="color" name="cor" id="cor" value="#000000">
+            </div>
+    
+            <div id="container-comentarios">
+                <textarea name="comentarios" id="comentarios" placeholder="Comentários ou Observações"></textarea>
+            </div>
+        </form>
         
     </section>
+
+    <div id="container-botoes">
+        <button type="submit" id="botao-salvar">Salvar</button>
+        <button type="reset" id="botao-limpar">Limpar</button>
+    </div>
 <script src="JS/script.js"></script>
 </body>
 </html>
